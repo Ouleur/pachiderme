@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pachiderme APIs - Des Apis utiles</title>
+    <!-- OpenGraph SEO meta tags -->
+    <meta  content="Seviceweb, data, Apis, Côte d'Ivoire, Apis public, Apis privé">
+    <meta name="description" content="Simplifiez le partage et la circulation des données administratives grace à pachiderme api, le site qui référence pratiquement toutes les APIs du service public et prive de Côte d'Ivoire.">
+    <!-- <meta content="images/banner.jpg" property="og:image"> -->
+    <meta name="author" content="Digital Tooch<" property="og:title">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/pulse.bootswatch.bootstrap.min.css">
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Circular-std CSS -->
+    <link rel="stylesheet" href="css/circular-std.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Favicone-->
+    <link rel="shortcut icon" href="images/pachiderme-favicone.png" />
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header>
+        <!-- Navbar -->
+        <div class="nav-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="#"><img src="images/pachiderme-logo.png" alt="Pachiderme APIs"></a>
+                            <button class="navbar-toggler navbar-toggler_second" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                                <!--  <span class="navbar-toggler-icon"></span> -->
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <!-- <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">For you & family <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">For
+                                            Business</a>
+                                    </li>
+                                </ul> -->
+                                <ul class="navbar-nav ml-auto">
+                                    
+                                    <li class="nav-item active">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Rechercher une API</a>
+                                    </li>
+                                    
+                                    <li class="nav-item active">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Voir les réalisations</a>
+                                    </li>
+                                    <!-- <li class="nav-item active">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                                    </li> -->
+                                    <li class="nav-item active dropdown">
+                                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class=""></i> À propos<span class="sr-only">(current)</span>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="documentation/index.html">Qui sommes-nous</a>
+                                            <a class="dropdown-item" href="support/index.html">Documentation</a>
+                                            <a class="dropdown-item" href="#">Support</a>
+                                            <!-- <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <button class="btn btn-outline-success me-2" type="button">Une question ?</button> -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Title -->
+        <div class="main-title__alt header__bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="hero-title  text-center  text-md-left">
+                            <p>Accédez aux données de toutes les administrations,<br>pour construire des services innovants.</p>
+                            <h1>Vous êtes<br>
+                                 <span class="ecris"></span> </h1>
+                            <div class="add-btn pricing-btn_wrap">
+                                <a href="#" data-toggle="modal" data-target="#contactmodal" class="btn btn-primary btn-lg">
+                                  Rechercher une API</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="main-banner_md">
+                            <img src="images/pachiderme-hero.jpg" class="img-fluid" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-style d-none d-md-block">
+                <img src="images/bg-1.png" class="img-fluid" alt="#">
+            </div>
+        </div>
+        <!--// Main Title -->
+        <!--// Navbar -->
+
+
+        <!--  Contact Modal -->
+        <div class="modal fade" id="contactmodal" tabindex="-1" role="dialog" aria-labelledby="phpcontactform"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-zoom" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+
+                        <form class="quote-form" action="php/contact.php" method="post" id="phpcontactform">
+                            <h5 class="text-center mt-3 mb-4">Génial, Vous voulez partager votre API !</h5>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6"> <input type="text" class="form-control" id="first_name" name="first_name"
+                                            placeholder="Nom*" required> </div>
+                                    <div class="col-sm-6"> <input type="text" class="form-control" id="last_name" name="last_name"
+                                            placeholder="Prénom*" required> </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Addresse Email*"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="phone" name="contact" placeholder="Contact*"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                              <select class="form-control" aria-label="Default select example">
+                                <option selected>Selectionner</option>
+                                <option value="Partager une API">Partager une API</option>
+                                <option value="Suggerer une API">Suggérer une API</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <textarea class="form-control" placeholder="Parler nous de votre API" id="floatingTextarea2" style="height: 100px"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100" id="js-contact-btn"><strong>
+                                    Soumettre
+                                </strong> </button>
+                            <div id="js-contact-result" data-success-msg="Bravo votre message nous est parvenu, Nous vous repondrons au plus tot"
+                                data-error-msg="Oulà! Quelque chose s'est mal passé"></div>
+
+                        </form>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--  // Contact Modal -->
+
+        <!--==================== NEW INSURANCE ====================-->
+        <div class="space bg-image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center-title">
+                            <h2>Comment ça marche ?</h2>
+                            <p>Idéal pour les particuliers et les entreprises</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-7 ml-auto">
+                        <div class="insurance-title_wrap insurance-title_wrap2">
+                            <!-- <h5>Monotonectally deploy seamless data and resource maximizing systems. </h5>
+                            <h6>Great for individuals and small families up to 4 members.</h6>
+                            <p class="insurance-para">A strong, up-to-date, employee benefits health insurance program
+                                is vital for attracting and retaining good employees. It takes diligence, creativity
+                                and attention to detail to ensure you are getting the best “bang for your buck” each
+                                and every year.</p> -->
+                            <div class="insurance-type d-flex align-items-center">
+                                <img src="images/tick.png" alt="#">
+                                <div class="insurance-type_title">
+                                    <h6>Trouvez l’API dont vous avez besoin</h6>
+                                    <p>Toutes nos API sont visibles sur cette page. Vous pouvez les filtrer par thématique,
+                                      u bien utiliser la recherche pour trouver l'API qui vous convient.</p>
+                                </div>
+                            </div>
+                            <div class="insurance-type d-flex align-items-center">
+                                <img src="images/tick.png" alt="#">
+                                <div class="insurance-type_title">
+                                    <h6>Obtenez l’accès à l’API</h6>
+                                    <p>Une grande partie des données publiques sont libres d'accès.
+                                    C'est ce que l'on appelle l’Open data. Tout le monde peut y accéder.
+                                  D’autres données sont sensibles et doivent être protégées.</p>
+                                </div>
+                            </div>
+                            <div class="insurance-type d-flex align-items-center">
+                                <img src="images/tick.png" alt="#">
+                                <div class="insurance-type_title">
+                                    <h6>Construisez votre service !</h6>
+                                    <p>Une fois que vous avez déterminé de quelle API vous avez besoin et que vous avez obtenu l’accès,
+                                      vous êtes prêt ! Vous pouvez commencer à construire votre service !</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-img-3">
+                <img src="images/undraw_modern_life_u1ev.svg" width="680" class="img-fluid" alt="#">
+            </div>
+            <div class="bg-style2">
+                <img src="images/bg-2.png" class="img-fluid" alt="#">
+            </div>
+        </div>
+        <!--//END NEW INSURANCE -->
+    </header>
+    <!--//END HEADER -->
+    <!--==================== CHOOSE YOUR INSURANCE ====================-->
+    <section class="space bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center-title">
+                        <h2>Découvrez des API du service public</h2>
+                        <p>Nos APIs sont Simple, Fiables et mise a jour Régulièrement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="item-box">
+                        <div class="item-icon color1">
+                            <img src="images/api-geo-ci.png" class="img-fluid" alt="#">
+                        </div>
+                        <h6>API Découpage Administratif (API Geo)</h6>
+                        <p>Acceder au decoupage administratif interrogez les référentiels géographiques plus facilement<br>
+                          Produit par : <strong>Pachiderme API</strong> </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="item-box">
+                        <div class="item-icon color2">
+                            <img src="images/api-entrprs-ci.png" class="img-fluid" alt="#">
+                        </div>
+                        <h6>API Entreprises Côte d'Ivoire</h6>
+                        <p>Accédez aux données et à la liste des entreprises et des associations ivoiriennes,
+                          afin de simplifier leurs démarches ou les votres.<br>
+                          Produit par : <strong>Pachiderme API</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="item-box">
+                        <div class="item-icon color3">
+                            <img src="images/api-adresse-ci.png" class="img-fluid" alt="#">
+                        </div>
+                        <h6>API Adresse (Base Adresse Nationale)</h6>
+                        <p>Interrogez la base de données de l’intégralité des adresses du territoire ivoirien<br>
+                          Produit par : <strong>Pachiderme API</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="item-box">
+                        <div class="item-icon color4">
+                            <img src="images/business-insurance.svg" class="img-fluid" alt="#">
+                        </div>
+                        <h6>Annuaire des établissements publics de l'administration</h6>
+                        <p>L’API qui référence les guichets publics locaux<br>
+                          Produit par : <strong>Pachiderme API</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="item-box">
+                        <div class="item-icon color5">
+                            <img src="images/travel-insurance.svg" class="img-fluid" alt="#">
+                        </div>
+                        <h6>Le Point d’Accès National aux données de transport</h6>
+                        <p>Rassembler les données de toute l’offre de mobilité à travers la Côte d'Ivoire<br>
+                          Produit par : <strong>Pachiderme API</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="item-box">
+                        <div class="item-icon color6">
+                            <img src="images/other-insurance.svg" class="img-fluid" alt="#">
+                        </div>
+                        <h6>API données ouvertes de l’Éducation Nationale</h6>
+                        <p>Découvrez les données publiques ouvertes et n’hésitez pas à nous faire connaître
+                           vos réutilisations de données et créations<br>
+                             Produit par : <strong>Ministère de l'Éducation Nationale</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--// END CHOOSE YOUR INSURANCE -->
+    <!--==================== EASY CLAIMS ====================-->
+    <section class="space">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center-title">
+                        <h2>Un Workflow simplifié</h2>
+                        <!-- <p>Easy as One, Two, Three</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="item-box howit-block">
+                        <div class="item-icon color1">
+                            <span>1</span>
+                        </div>
+                        <h6>Inscrivez-vous !</h6>
+                        <p>Avoir un compte permet d'acceder a une multitude
+                          de services et foctionnalites.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="item-box howit-block_af">
+                        <div class="item-icon color2">
+                            <span>2</span>
+                        </div>
+                        <h6>Rechercher et trouver</h6>
+                        <p>Rechercher, demandez et obtenez l’accès à l’API de votre choix.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="item-box">
+                        <div class="item-icon color3">
+                            <span>3</span>
+                        </div>
+                        <h6>Demarrer</h6>
+                        <p>Construisez votre service, apportez un plus !.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--// END EASY CLAIMS -->
+    <!--==================== TESTIMONIAL ====================-->
+    <section class="testimonial">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-12 col-lg-7 align-items-center">
+                    <div class="testi-content_block">
+                        <img src="images/quote.png" class="img-fluid" alt="#">
+                        <h3>I need to understand what’s going on – it’s my health and I want to feel secure in it. With
+                            my previous health insurance, I didn’t know how any of it worked.</h3>
+                        <span>Matthew Young</span>
+                        <p>Legal Consultant, United States</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testi-img_wrap">
+            <img src="images/testi-img.png" class="img-fluid" alt="#" width="650">
+        </div>
+        <!-- <div class="bg-img3"><img src="images/bg-image3.png" class="img-fluid" alt="#"></div> -->
+    </section>
+    <!--//END TESTIMONIAL -->
+    <!--==================== ADD ====================-->
+    <section class="add-section clearfix">
+        <div class="container">
+            <!-- <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="add-box">
+                        <img src="images/shield-yellow.svg" class="img-fluid shield" alt="#">
+                        <div class="add-content">
+                            <h3> 100% Satisfaction Guarantee</h3>
+                            <p>We offer no questions asked refund policy for 14 days from the policy date.</p>
+                        </div>
+                        <div class="add-btn">
+                            <a href="#" data-toggle="modal" data-target="#contactmodal" class="btn btn-success">Get
+                                your free Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <!--//END ADD -->
+    <!--==================== PRICING ====================-->
+    <section class="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center-title">
+                        <h2>Tarification</h2>
+                        <p>Prix simples et honnêtes. Pas de frais dissimulés.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pricing-wrap">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="pricing-block">
+                            <h6 class="primary">BASIC</h6>
+                            <div class="pricing-high">
+                                <div class="pricing-icon color3">
+                                    <h2><span>$</span>9</h2>
+                                </div>
+                            </div>
+                            <div class="pricing-text">
+                                <i class="fas fa-check"></i>
+                                <p>Rapidiously strategize value</p>
+                            </div>
+                            <div class="pricing-text">
+                                <i class="fas fa-check"></i>
+                                <p>Progressively visualize leadership </p>
+                            </div>
+                            <div class="pricing-text">
+                                <i class="fas fa-check"></i>
+                                <p>Equity invested supply chains. </p>
+                            </div>
+                            <div class="add-btn pricing-btn_wrap">
+                                <a href="#" class="btn btn-success">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="pricing-block pricing-block_middle">
+                            <h6 class="secondary">PROFESSIONAL</h6>
+                            <span class="save-price">Save 20%</span>
+                            <div class="star-middle">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="pricing-high">
+                                <div class="pricing-icon color7">
+                                    <h2><span>$</span>19</h2>
+                                </div>
+                            </div>
+                            <div class="pricing-text">
+                                <i class="fas fa-check"></i>
+                                <p>Rapidiously strategize value</p>
+                            </div>
+                            <div class="pricing-text">
+                                <i class="fas fa-check"></i>
+                                <p>Progressively visualize leadership </p>
+                            </div>
+                            <div class="pricing-text">
+                                <i class="fas fa-check"></i>
+                                <p>Equity invested supply chains</p>
+                            </div>
+                            <div class="pricing-text">
+                                <i class="fas fa-check"></i>
+                                <p>Proactively leverage</p>
+                            </div>
+                            <div class="add-btn pricing-btn_wrap">
+                                <a href="#" class="btn btn-warning">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="pricing-block">
+                            <h6 class="tertiary">PREMIUM</h6>
+                            <div class="pricing-high">
+                                <div class="pricing-icon color1">
+                                    <h2><span>$</span>49</h2>
+                                </div>
+                            </div>
+                            <div class="pricing-text">
+                                <i class="fas fa-check"></i>
+                                <p>Rapidiously strategize value</p>
+                            </div>
+                            <div class="pricing-text">
+                                <i class="fas fa-check"></i>
+                                <p>Progressively visualize leadership </p>
+                            </div>
+                            <div class="pricing-text">
+                                <i class="fas fa-check"></i>
+                                <p>Equity invested supply chains. </p>
+                            </div>
+                            <div class="add-btn pricing-btn_wrap">
+                                <a href="#" class="btn btn-primary">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pricing-bottom_text">
+                        <p>*Prices shown per month if paid annually</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pricing-bg pricing-bg_secong">
+            <img src="images/bg-image4.png" class="img-fluid" alt="#">
+        </div>
+    </section>
+    <!--//END PRICING -->
+    <!--==================== CONTENT SECTION ====================-->
+    <!-- <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content-box content-box1">
+                        <h5>Which are the network hospitals in your vicinity?</h5>
+                        <p>To avail a cashless settlement of your claim, you should be admitted in a network hospital.
+                            A company has a list of such hospitals and you need to find out whether the hospital in the
+                            company’s network is your preferred choice of hospital and/or located in your area.</p>
+                    </div>
+                    <div class="content-box">
+                        <h5>What are the documents required for claiming?</h5>
+                        <p>A pre-authorization form is required in case of cashless claims which are to be submitted to
+                            the TPA. Other documents might also be required and you should have the knowledge of the
+                            required documents.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content-box content-box1">
+                        <h5>Will I get covered for my pre-existing illnesses?</h5>
+                        <p>Every insurer excludes coverage on the pre-existing illnesses for certain tenure at the
+                            starting of the policy. You need to find out what this waiting period for your pre-existing
+                            illness is and how soon can you be covered for your pre-existing illnesses. </p>
+                    </div>
+                    <div class="content-box">
+                        <h5>Is maternity covered in health insurance policies?</h5>
+                        <p>No. As health insurance policy is designed to cover unforeseen medical expenses a normal
+                            health insurance policy does not cover maternity expenses. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--//END CONTENT SECTION -->
+    <!--==================== ADD ====================-->
+    <section class="add-section clearfix collapse-wrap">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="add-box">
+                        <img src="images/shield-green.svg" class="img-fluid shield" alt="#">
+                        <div class="add-content">
+                            <h3> Vous voulez partager une API ? </h3>
+                            <p>Nous sommes ouverts et hautement disponible a toutes colaborations.</p>
+                        </div>
+                        <div class="add-btn">
+                            <a href="#" data-toggle="modal" data-target="#contactmodal" class="btn btn-success">
+                                Partager une API</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//END ADD -->
+    <!--==================== FOOTER ====================-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-title">
+                        <h6>CONTACT</h6>
+                        <p>400-401 West Georgia Street<br>
+                            Treichville, KM4, Abidjan<br>
+                            +225 12 34 56 78 90<br>
+                            commercial@pachiderme.ci</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title">
+                        <h6>NOUS-SUIVRE</h6>
+                        <ul>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-title">
+                        <h6>QUI SOMMES NOUS</h6>
+                        <p>Compellingly myocardinate market-driven infrastructures before team driven manufactured
+                            products. Monotonectally exploit tactical markets vis-a-vis excellent deliverables. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>Copyright © 2019. Insurance LLC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--//END FOOTER -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Contact js -->
+    <script src="js/validate.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/typed.js"></script>
+    <script type="text/javascript">
+    // var typed = new Typed('.ecris', {
+    //     strings: [' un ministère ?|','une collectivité ?|','une association ?|'une entreprise ?|','un particulier ?|'
+    //             ],
+    //     smartBackspace: true // Default value
+
+        var typed = new Typed('.ecris', {
+          strings: ['un ministère ?', 'une ONG ?', 'une association ?', 'une entreprise ?', 'un particulier ?'],
+          typeSpeed: 50,
+          backSpeed: 50,
+          loop: true,
+          smartBackspace: true
+        });
+    </script>
+</body>
+
+</html>
